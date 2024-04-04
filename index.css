@@ -1,9 +1,4 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
+/* 
 .header-div {
     background-color: #297eff;
     width: 100%;
@@ -71,7 +66,8 @@
     height: 24px;
     background: #999;
     border: 0;
-    transform: translate(2px, -8px) rotate(-45deg);
+    border-radius: 3px;
+    transform: translate(2px, -7.5px) rotate(-45deg);
 }
 
 .search.active .icon::after {
@@ -81,7 +77,8 @@
     height: 24px;
     background: #999;
     border: 0;
-    transform: translate(2px, 8px) rotate(45deg);
+    border-radius: 3px;
+    transform: translate(2px, 7.5px) rotate(45deg);
 }
 
 .search .input-div {
@@ -106,5 +103,93 @@
     padding: 10px 0;
 }
 
+.search .clear {
+    position: absolute;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);  
+}
 
+.search .clear::before {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 24px;
+    background: #999;
+    border: 0;
+    border-radius: 3px;
+    transform: rotate(45deg);
+}
 
+.search .clear::after {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 24px;
+    background: #999;
+    border-radius: 3px;
+    border: 0;
+    transform: rotate(-45deg);
+}
+ */
+
+ @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    padding: 30px 0;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+.search-input {
+ font-size: 18px;
+ padding: 3px;
+ border-radius: 3px;   
+}
+
+.search-btn {
+font-size: 18px;
+border-radius: 3px;
+border: 0;
+background-color: green;
+color: white;
+padding: 5px;
+margin-left: 5px;
+cursor: pointer;
+}
+
+.gallery-div {
+    display: flex;
+    align-items: center;
+    /* justify-content: center;
+    gap: 45px; */
+    width: 80%;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.img-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
